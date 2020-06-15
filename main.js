@@ -53,7 +53,7 @@ for(var i = 0; i < planets.length; i++) {
     var weight = planets[planetIndex][1];
     var result = userWeight * weight;
     // 6. Write code to display the message shown in the screenshot.
-    document.getElementById('output').innerHTML = `<p>If you were on ${planetName}, you would weigh ${result} lbs!</p>`;
+    document.getElementById('output').innerHTML = `<p>If you were on <span>${planetName}</span>, you would weigh <span>${result}</span> lbs!</p>`;
 };
 // calculateWeight();
 // handleClickEvent();
