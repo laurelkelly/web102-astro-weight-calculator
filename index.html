@@ -3,9 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <link href="index-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
   </head>
   <body>
-     <!-- Write your markup here  -->
+
+    <h1>I'm an Astro Weight Calculator!</h1>
+
+    <section>  
+      <div class="textbox">
+        <label for="user-weight">Enter your Weight:</label>
+        <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+      </div>
+    
+      <div class="dropdown">
+        <label for="planets">Select a Planet</label>
+        <select id="planets">
+          <!-- <option value="default"></option> -->
+        </select>
+      </div>
+    </section>
+
+    <p id="output"></p><br>
+
+    <button id="calculate-button" type="button" onClick="calculateWeight()">Calculate!</button>
 
     <script src="main.js" charset="utf-8"></script>
   </body>
